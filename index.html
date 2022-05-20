@@ -66,12 +66,6 @@
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
-        <div class="backdrop-hero" data-modal>
-          <div class="model-btn">
-            <p></p>
-            <button class="close-btn" data-modal-close></button>
-          </div>
-        </div>
       </section>
 
       <!-- наши особиности -->
@@ -456,6 +450,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="model-btn">
+        <button class="close-btn" data-modal-close>
+          <svg width="30px" height="30px">
+            <use href="./img/sprates.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
