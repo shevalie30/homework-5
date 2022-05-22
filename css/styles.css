@@ -87,15 +87,13 @@ ul {
   letter-spacing: var(--letter-spacing);
   text-decoration: var(--text-decoration);
   color: var(--team-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .header-list-link:hover,
 .header-list-link:focus {
-  color: #2196f3;
-}
-
-.list-link:hover,
-.list-link:focus {
   color: #2196f3;
 }
 
@@ -107,6 +105,7 @@ ul {
 .header-iconc {
   margin-right: 10px;
   fill: currentColor;
+  transition-property: fill;
 }
 
 /* навигация шапки */
@@ -149,6 +148,7 @@ ul {
   letter-spacing: var(--letter-spacing);
   text-decoration: var(--text-decoration);
   color: #212121;
+  transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -168,8 +168,9 @@ ul {
   letter-spacing: var(--letter-spacing);
   text-decoration: var(--text-decoration);
   color: #2196f3;
-  /* transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function); */
+  transition-property: color;
+  animation-duration: var(--duration);
+  animation-timing-function: var(--timing-function);
 }
 
 .navigation-link-activ::after {
@@ -228,6 +229,7 @@ ul {
   color: var(--brand-color);
   cursor: var(--cursor);
   font-family: inherit;
+  transition-property: color;
 }
 
 .hero-btn:hover,
@@ -247,7 +249,8 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition-duration: transitoum var(--duration);
+  transition: opacity, visibility;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -262,8 +265,8 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition-duration: transitoum var(--duration);
-  transition-timing-function: var(--timing-function);
+  animation-duration: var(--duration);
+  animation-timing-function: var(--timing-function);
 }
 
 .close-btn {
@@ -295,6 +298,7 @@ ul {
   line-height: 1.62;
   cursor: var(--cursor);
   font-family: inherit;
+  transition-property: background-color, color, box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -315,9 +319,10 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   color: #212121;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   cursor: var(--cursor);
   font-family: inherit;
+  transition-property: background-color, color, box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -366,6 +371,7 @@ ul {
 
 .gallery-link {
   text-decoration: var(--text-decoration);
+  transition-property: box-shadow;
 }
 
 .card-thumb {
@@ -399,7 +405,7 @@ ul {
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -410,6 +416,8 @@ ul {
   cursor: var(--cursor);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .gallery-ps {
@@ -597,6 +605,7 @@ ul {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
+  transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -613,6 +622,7 @@ ul {
 
 .social-iconc {
   fill: #afb1b8;
+  transition-property: fill;
 }
 
 .team-name {
@@ -660,6 +670,7 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: border;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -671,6 +682,7 @@ ul {
 
 .clients-iconc {
   fill: #afb1b8;
+  transition-property: fill;
 }
 
 .clients-link:hover,
@@ -684,10 +696,6 @@ ul {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container-box {
@@ -778,6 +786,7 @@ ul {
 
 .svg-iconc {
   fill: #ffffff;
+  transition-property: fill;
 }
 
 .footer-link {
@@ -788,6 +797,7 @@ ul {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
