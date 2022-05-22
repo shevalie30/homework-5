@@ -105,7 +105,6 @@ ul {
 .header-iconc {
   margin-right: 10px;
   fill: currentColor;
-  transition-property: fill;
 }
 
 /* навигация шапки */
@@ -230,11 +229,13 @@ ul {
   cursor: var(--cursor);
   font-family: inherit;
   transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #f34e38;
+  color: #ffe602;
 }
 
 .backdrop.is-hidden {
@@ -249,7 +250,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity, visibility;
+  transition-property: opacity, visibility;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -375,6 +376,8 @@ ul {
   text-decoration: var(--text-decoration);
 
   transition-property: box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .card-thumb {
@@ -627,6 +630,8 @@ ul {
 .social-iconc {
   fill: #afb1b8;
   transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .team-name {
@@ -687,6 +692,8 @@ ul {
 .clients-iconc {
   fill: #afb1b8;
   transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .clients-link:hover,
@@ -779,7 +786,8 @@ ul {
   border-radius: 50%;
 }
 
-.item-iconc:hover {
+.item-iconc:hover,
+.item-iconc:focus {
   background-color: #2196f3;
 }
 
@@ -791,6 +799,8 @@ ul {
 .svg-iconc {
   fill: #ffffff;
   transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-link {
